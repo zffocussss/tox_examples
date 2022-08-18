@@ -6,4 +6,5 @@ def square(n: float) -> float:
 
 def add(n: int) -> int:
     """Double."""
+
     return n + n
