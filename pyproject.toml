@@ -2,3 +2,8 @@
 name = "cz_conventional_commits"
 version = "2.0.0"
 tag_format = "$version"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_third_party = ["numpy", "setuptools", "squarer"]
