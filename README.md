@@ -2,4 +2,3 @@ For the tutorial, see the [Python tox tutorial](https://christophergs.com/python
 
 - 1
 - 2
-- 3
