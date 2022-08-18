@@ -10,5 +10,5 @@ def square() -> int:
     return np.random.randint(1, 100)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     train_ml_squarer()
