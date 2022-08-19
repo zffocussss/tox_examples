@@ -7,3 +7,27 @@ tag_format = "$version"
 profile = "black"
 line_length = 88
 known_third_party = ["numpy", "setuptools", "squarer"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310']
+include = '\.pyi?$'
+exclude = '''
+(
+  # The following are specific to Black, you probably don't want those.
+   blib2to3
+  | tests/data
+  | profiling
+  | \.git
+  | .__pycache__
+  | \.__pycache__
+  | \.hg|
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)
+'''
