@@ -13,13 +13,13 @@ repos:
     - commit-msg
   - id: end-of-file-fixer
     stages:
-     - commit-msg
+    - commit-msg
   - id: check-toml
     stages:
-      - commit-msg
+    - commit-msg
   - id: check-yaml
     stages:
-      - commit-msg
+    - commit-msg
 
 
 
@@ -39,3 +39,10 @@ repos:
   rev: 5.10.1
   hooks:
   - id: isort
+- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+  rev: v2.3.0
+  hooks:
+  - id: pretty-format-yaml
+    exclude: ^test-data/.*$
+    args:
+    - --autofix
