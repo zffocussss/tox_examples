@@ -25,6 +25,3 @@ spec:
             name: sentry-nginx
             port:
               number: 80
-      -  path: /
-       -  path: /
-        -  path: /

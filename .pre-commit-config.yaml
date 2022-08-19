@@ -1,5 +1,4 @@
 default_stages:
-- commit-msg
 - commit
 repos:
 - hooks:
