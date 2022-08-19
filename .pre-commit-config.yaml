@@ -1,6 +1,5 @@
 default_stages:
-- commit
-- push
+- commit-msg
 repos:
 - hooks:
   - id: commitizen
