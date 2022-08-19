@@ -13,7 +13,7 @@ repos:
     - commit-msg
   - id: end-of-file-fixer
     stages:
-    - commit-msg
+     - commit-msg
   - id: check-toml
     stages:
       - commit-msg
