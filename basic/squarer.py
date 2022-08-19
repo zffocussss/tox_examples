@@ -1,3 +1,7 @@
+import os
+from sys import argv
+
+
 def square(n: float) -> float:
     """Square a number."""
 
