@@ -17,6 +17,9 @@ repos:
   - id: check-toml
     stages:
       - commit-msg
+  - id: check-yaml
+    stages:
+      - commit-msg
 
 
 
