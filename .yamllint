@@ -1,0 +1,14 @@
+extends: default
+
+rules:
+  # 80 chars should be enough, but don't fail if a line is longer
+  line-length:
+    max: 80
+    level: warning
+  indentation:
+    spaces: 2
+    indent-sequences: consistent
+  empty-lines:
+    max: 3
+    max-start: 0
+    max-end: 0
