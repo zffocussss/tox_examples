@@ -46,3 +46,7 @@ repos:
     exclude: ^test-data/.*$
     args:
     - --autofix
+- repo: https://github.com/adrienverge/yamllint.git
+  rev: v1.21.0  # or higher tag
+  hooks:
+  - id: yamllint
