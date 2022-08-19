@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: sentry
+  namespace: sentry
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    kubernetes.io/ingress.class: kong
+    konghq.com/preserve-host: "true"
+    konghq.com/plugins: sentry-add-response-header
+spec:
+  tls:
+  - hosts:
+    - sentry.ginolegaltech.cn
+    secretName: tls-secret-sentry-cn
+  rules:
+  - host: sentry.ginolegaltech.cn
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: sentry-nginx
+            port:
+              number: 80
