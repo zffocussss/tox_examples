@@ -43,6 +43,7 @@ repos:
     exclude: ^test-data/.*$
     args:
     - --autofix
+    - --preserve-quotes
 - repo: https://github.com/adrienverge/yamllint.git
   rev: v1.27.1  # or higher tag
   hooks:
